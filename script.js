@@ -1,4 +1,5 @@
 var entrarBtn = document.getElementById("entrarBtn");
+
 var formPage = document.getElementById("formPage");
 var idadeForm = document.getElementById("idadeForm");
 var limparBtn = document.getElementById("limparBtn");
@@ -21,7 +22,8 @@ idadeForm.addEventListener("submit", function (e) {
   } else {
     alert("Por favor, preencha a sua idade.");
   }
-});
+);
+
 
 
 limparBtn.addEventListener("click", function () {
