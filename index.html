@@ -4,11 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Formulário de Idade</title>
+  <link rel="stylesheet" href="./estilo.css">
 </head>
 <body>
 
-  <!-- Botão para abrir a página do formulário -->
+
   <button id="entrarBtn">Entrada</button>
+
 
   <div id="formPage" style="display:none;">
     <h2>Preencha sua idade</h2>
@@ -16,10 +18,11 @@
       <label for="idade">Idade: </label>
       <input type="number" id="idade" required />
       <button type="submit">Enviar</button>
+      <button type="button" id="limparBtn">Limpar</button>
     </form>
   </div>
 
-  <!-- Incluindo o script TypeScript compilado -->
+ 
   <script src="script.js"></script>
 </body>
 </html>

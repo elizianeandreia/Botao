@@ -1,24 +1,32 @@
 var entrarBtn = document.getElementById("entrarBtn");
-// Seleciona a área do formulário (inicialmente oculta)
 var formPage = document.getElementById("formPage");
-// Seleciona o formulário
 var idadeForm = document.getElementById("idadeForm");
-// Evento de clique no botão "Entrada"
+var limparBtn = document.getElementById("limparBtn");
+
+
 entrarBtn.addEventListener("click", function () {
-    // Mostra o formulário
-    formPage.style.display = "block";
+  formPage.style.display = "block";
+  formPage.classList.add('fadeIn'); 
 });
-// Evento de envio do formulário
+
+
 idadeForm.addEventListener("submit", function (e) {
-    e.preventDefault(); // Evita o comportamento padrão de envio do formulário
-    // Pega a idade digitada
-    var idadeInput = document.getElementById("idade");
-    var idade = idadeInput.value;
-    // Verifica se a idade foi preenchida
-    if (idade) {
-        alert("Obrigado por preencher a idade!");
-    }
-    else {
-        alert("Por favor, preencha a sua idade.");
-    }
+  e.preventDefault();
+
+  var idadeInput = document.getElementById("idade");
+  var idade = idadeInput.value;
+
+  if (idade) {
+    alert("Obrigado por preencher a idade!");
+  } else {
+    alert("Por favor, preencha a sua idade.");
+  }
+});
+
+
+limparBtn.addEventListener("click", function () {
+
+  var idadeInput = document.getElementById("idade");
+  idadeInput.value = ''; 
+  formPage.style.display = "none"; 
 });
